@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C19939731CA27A2400D8DC6A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939721CA27A2400D8DC6A /* MainViewModel.swift */; };
 		C19939761CA27D9400D8DC6A /* HarmonySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939751CA27D9400D8DC6A /* HarmonySet.swift */; };
+		C19939821CA2845E00D8DC6A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C19939811CA2845E00D8DC6A /* README.md */; };
+		C19939841CA284E400D8DC6A /* Array+Organum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939831CA284E400D8DC6A /* Array+Organum.swift */; };
+		C19939861CA286BC00D8DC6A /* ChordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */; };
 		C1DCB6811CA2727100F6FD9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCB6801CA2727100F6FD9C /* AppDelegate.swift */; };
 		C1DCB6831CA2727100F6FD9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCB6821CA2727100F6FD9C /* MainViewController.swift */; };
 		C1DCB6881CA2727100F6FD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DCB6871CA2727100F6FD9C /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 /* Begin PBXFileReference section */
 		C19939721CA27A2400D8DC6A /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C19939751CA27D9400D8DC6A /* HarmonySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonySet.swift; sourceTree = "<group>"; };
+		C19939811CA2845E00D8DC6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C19939831CA284E400D8DC6A /* Array+Organum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Organum.swift"; sourceTree = "<group>"; };
+		C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewCell.swift; sourceTree = "<group>"; };
 		C1DCB67D1CA2727100F6FD9C /* Organum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Organum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DCB6801CA2727100F6FD9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1DCB6821CA2727100F6FD9C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -94,10 +100,13 @@
 		C1DCB67F1CA2727100F6FD9C /* Organum */ = {
 			isa = PBXGroup;
 			children = (
+				C19939811CA2845E00D8DC6A /* README.md */,
 				C1DCB6801CA2727100F6FD9C /* AppDelegate.swift */,
 				C1DCB6821CA2727100F6FD9C /* MainViewController.swift */,
 				C19939721CA27A2400D8DC6A /* MainViewModel.swift */,
+				C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */,
 				C19939751CA27D9400D8DC6A /* HarmonySet.swift */,
+				C19939831CA284E400D8DC6A /* Array+Organum.swift */,
 				C1DCB6871CA2727100F6FD9C /* Assets.xcassets */,
 				C1DCB6891CA2727100F6FD9C /* LaunchScreen.storyboard */,
 				C1DCB68C1CA2727100F6FD9C /* Info.plist */,
@@ -252,6 +261,9 @@
 			files = (
 				C1DCB6831CA2727100F6FD9C /* MainViewController.swift in Sources */,
 				C19939731CA27A2400D8DC6A /* MainViewModel.swift in Sources */,
+				C19939821CA2845E00D8DC6A /* README.md in Sources */,
+				C19939861CA286BC00D8DC6A /* ChordTableViewCell.swift in Sources */,
+				C19939841CA284E400D8DC6A /* Array+Organum.swift in Sources */,
 				C1DCB6811CA2727100F6FD9C /* AppDelegate.swift in Sources */,
 				C19939761CA27D9400D8DC6A /* HarmonySet.swift in Sources */,
 			);

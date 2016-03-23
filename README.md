@@ -1,2 +1,2 @@
-# Xenakis
+# Organum
 computer chords
