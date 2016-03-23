@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0CD09B793099D1F4B9851FF36803ECAD3C8241FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72" : 0,
+    "0CD09B793099D1F4B9851FF36803ECAD3C8241FD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "71B5D8E2-7742-471A-B205-B683B1E48563",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72" : "MusicKit\/",
+    "0CD09B793099D1F4B9851FF36803ECAD3C8241FD" : "Organum\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Organum",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Organum.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:benzguo\/Xenakis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0CD09B793099D1F4B9851FF36803ECAD3C8241FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:benzguo\/MusicKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72"
+    }
+  ]
+}

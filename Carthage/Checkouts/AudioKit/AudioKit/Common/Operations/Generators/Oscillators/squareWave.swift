@@ -1,0 +1,28 @@
+//
+//  squareWave.swift
+//  AudioKit
+//
+//  Created by Aurelius Prochazka, revision history on Github.
+//  Copyright © 2016 AudioKit. All rights reserved.
+//
+
+import Foundation
+
+extension AKOperation {
+
+    /// This is a bandlimited square oscillator ported from the "square" function
+    /// from the Faust programming language.
+    ///
+    /// - returns: AKOperation
+    /// - parameter frequency: In cycles per second, or Hz. (Default: 440, Minimum: 0, Maximum: 20000)
+    /// - parameter amplitude: Output amplitude (Default: 1.0, Minimum: 0, Maximum: 10)
+    /// - parameter pulseWidth: Duty cycle width (range 0-1). (Default: 0.5, Minimum: 0, Maximum: 1)
+     ///
+    public static func squareWave(
+        frequency frequency: AKParameter = 440,
+        amplitude: AKParameter = 1.0,
+        pulseWidth: AKParameter = 0.5
+        ) -> AKOperation {
+            return AKOperation("(\(frequency) \(amplitude) \(pulseWidth) blsquare)")
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0CD09B793099D1F4B9851FF36803ECAD3C8241FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72" : 0,
+    "0CD09B793099D1F4B9851FF36803ECAD3C8241FD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E34E6713-5FCE-43E0-83DC-B236171576AC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72" : "MusicKit\/",
+    "0CD09B793099D1F4B9851FF36803ECAD3C8241FD" : "Continuo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Continuo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Continuo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:benzguo\/Xenakis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0CD09B793099D1F4B9851FF36803ECAD3C8241FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:benzguo\/MusicKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "667D2F63578BE4AC3769E6FFF1AE876A7A50DE72"
+    }
+  ]
+}
