@@ -14,14 +14,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     var viewModel: MainViewModel
     let tableView = UITableView()
-    let synth = AKWavetableSynth(waveform: AKTable(.Sine), voiceCount: 5)
+    let noteBuffer = NoteBuffer()
 
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-
-        AudioKit.output = synth
-        AudioKit.start()
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(add))
         self.navigationItem.rightBarButtonItem = addButton
@@ -40,6 +37,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AudioKit.start()
     }
 
     override func viewDidLayoutSubviews() {
@@ -48,16 +46,20 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func add() {
+        tableView.beginUpdates()
         viewModel.add()
-        tableView.reloadData()
+        let indexPath = NSIndexPath(forRow: viewModel.cellModels.count - 1,
+                                    inSection: 0)
+        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        tableView.endUpdates()
     }
 
     // MARK: UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let chordName = viewModel.chordNames[indexPath.row]
+        let cellModel = viewModel.cellModels[indexPath.row]
         let id = NSStringFromClass(ChordTableViewCell.self)
         let cell = tableView.dequeueReusableCellWithIdentifier(id) as? ChordTableViewCell
-        cell?.label.text = chordName
+        cell?.configure(cellModel, noteBuffer: noteBuffer)
         return cell!
     }
 
@@ -66,18 +68,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.harmonies.count
-    }
-
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let pitchSet = viewModel.pitchSets[indexPath.row]
-        for pitch in pitchSet {
-            let midi = Int(pitch.midi)
-            synth.playNote(midi, velocity: 100)
-            after(0.1) {
-                self.synth.stopNote(midi)
-            }
-        }
+        return viewModel.cellModels.count
     }
 
 

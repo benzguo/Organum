@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C14DF9951CA311D300B1ADE0 /* MusicKit.framework in Embed frameworks */ = {isa = PBXBuildFile; fileRef = C1DCB6B11CA273A100F6FD9C /* MusicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C14DF9961CA311D700B1ADE0 /* AudioKit.framework in Embed frameworks */ = {isa = PBXBuildFile; fileRef = C1DCB6B61CA273C000F6FD9C /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C154BC4C1CA3C2CE004F9005 /* NoteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154BC4B1CA3C2CE004F9005 /* NoteBuffer.swift */; };
+		C154BC521CA3C5A7004F9005 /* ChordCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154BC511CA3C5A7004F9005 /* ChordCellModel.swift */; };
 		C19939731CA27A2400D8DC6A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939721CA27A2400D8DC6A /* MainViewModel.swift */; };
-		C19939761CA27D9400D8DC6A /* HarmonySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939751CA27D9400D8DC6A /* HarmonySet.swift */; };
+		C19939761CA27D9400D8DC6A /* HarmonyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939751CA27D9400D8DC6A /* HarmonyGenerator.swift */; };
 		C19939821CA2845E00D8DC6A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C19939811CA2845E00D8DC6A /* README.md */; };
 		C19939841CA284E400D8DC6A /* Array+Organum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939831CA284E400D8DC6A /* Array+Organum.swift */; };
 		C19939861CA286BC00D8DC6A /* ChordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */; };
@@ -51,9 +55,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C14DF9901CA311B700B1ADE0 /* Embed frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C14DF9961CA311D700B1ADE0 /* AudioKit.framework in Embed frameworks */,
+				C14DF9951CA311D300B1ADE0 /* MusicKit.framework in Embed frameworks */,
+			);
+			name = "Embed frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C154BC4B1CA3C2CE004F9005 /* NoteBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteBuffer.swift; sourceTree = "<group>"; };
+		C154BC511CA3C5A7004F9005 /* ChordCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordCellModel.swift; sourceTree = "<group>"; };
 		C19939721CA27A2400D8DC6A /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		C19939751CA27D9400D8DC6A /* HarmonySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonySet.swift; sourceTree = "<group>"; };
+		C19939751CA27D9400D8DC6A /* HarmonyGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonyGenerator.swift; sourceTree = "<group>"; };
 		C19939811CA2845E00D8DC6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C19939831CA284E400D8DC6A /* Array+Organum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Organum.swift"; sourceTree = "<group>"; };
 		C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewCell.swift; sourceTree = "<group>"; };
@@ -103,9 +124,11 @@
 				C19939811CA2845E00D8DC6A /* README.md */,
 				C1DCB6801CA2727100F6FD9C /* AppDelegate.swift */,
 				C1DCB6821CA2727100F6FD9C /* MainViewController.swift */,
+				C154BC4B1CA3C2CE004F9005 /* NoteBuffer.swift */,
 				C19939721CA27A2400D8DC6A /* MainViewModel.swift */,
+				C154BC511CA3C5A7004F9005 /* ChordCellModel.swift */,
 				C19939851CA286BC00D8DC6A /* ChordTableViewCell.swift */,
-				C19939751CA27D9400D8DC6A /* HarmonySet.swift */,
+				C19939751CA27D9400D8DC6A /* HarmonyGenerator.swift */,
 				C19939831CA284E400D8DC6A /* Array+Organum.swift */,
 				C1DCB6871CA2727100F6FD9C /* Assets.xcassets */,
 				C1DCB6891CA2727100F6FD9C /* LaunchScreen.storyboard */,
@@ -144,6 +167,7 @@
 				C1DCB6791CA2727100F6FD9C /* Sources */,
 				C1DCB67A1CA2727100F6FD9C /* Frameworks */,
 				C1DCB67B1CA2727100F6FD9C /* Resources */,
+				C14DF9901CA311B700B1ADE0 /* Embed frameworks */,
 				C1DCB6A51CA272B500F6FD9C /* ShellScript */,
 			);
 			buildRules = (
@@ -262,10 +286,12 @@
 				C1DCB6831CA2727100F6FD9C /* MainViewController.swift in Sources */,
 				C19939731CA27A2400D8DC6A /* MainViewModel.swift in Sources */,
 				C19939821CA2845E00D8DC6A /* README.md in Sources */,
+				C154BC4C1CA3C2CE004F9005 /* NoteBuffer.swift in Sources */,
 				C19939861CA286BC00D8DC6A /* ChordTableViewCell.swift in Sources */,
 				C19939841CA284E400D8DC6A /* Array+Organum.swift in Sources */,
 				C1DCB6811CA2727100F6FD9C /* AppDelegate.swift in Sources */,
-				C19939761CA27D9400D8DC6A /* HarmonySet.swift in Sources */,
+				C154BC521CA3C5A7004F9005 /* ChordCellModel.swift in Sources */,
+				C19939761CA27D9400D8DC6A /* HarmonyGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
